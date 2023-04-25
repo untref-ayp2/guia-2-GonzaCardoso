@@ -33,7 +33,7 @@ func (q *Queue) IsEmpty() bool {
 	return len(*q) == 0
 }
 
-
+/*
 type QueueS //TODO
 
 func (q *QueueS) Enqueue(v any) {
@@ -51,3 +51,4 @@ func (q *QueueS) IsEmpty() bool {
 func (q *QueueS) Front() (any, error) {
     //TODO
 }
+*/

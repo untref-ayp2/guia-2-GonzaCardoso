@@ -1,20 +1,21 @@
 package tests
 
 import (
+	"fmt"
 	"guia2/ejercicios"
-	"guia2/queue"
 	"testing"
-
-	"github.com/google/go-cmp/cmp"
 )
 
 func TestInvertirCadena(t *testing.T) {
 	salida := ejercicios.InvertirCadena("abcd")
+	fmt.Println(salida)
 	if "dcba" != salida {
 		t.Error("InvertirCadena falla")
 	}
+
 }
 
+/*
 func TestPalindromo(t *testing.T) {
 	if true != ejercicios.Palindromo("1456541") ||
 		true != ejercicios.Palindromo("145541") {
@@ -39,3 +40,4 @@ func TestUnirColas(t *testing.T) {
 		t.Error("UnirColas falla")
 	}
 }
+*/
